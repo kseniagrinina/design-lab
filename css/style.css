@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+}
+
+.page {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+/*** REUSABLE COMPONENTS ***/
+
+.container {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 70px 0 30px 0;
+    border-right: 1px solid #3c3c3c;
+    border-left: 1px solid #3c3c3c;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.section__title {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 8.95px;
+}
+
+.wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 1px;
+    background-color: #3c3c3c;
+}
+
+.wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 1px;
+    background-color: #3c3c3c;
+}
+
+.text {
+    width: 50%;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+/*** HEADER ***/
+
+.header {
+    height: 100vh;
+    background-image: url(../img/hero-bg.png);
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.container__header {
+    width: 40%;
+}
+
+.header__logo {
+    width: 4.3rem;
+    height: 4.3rem;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.header__title {
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 8.62px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.header__text {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.9px;
+    line-height: 1.8rem;
+}
+
+.header__scroll {
+    fill: #ffffff;
+    width: 1.5rem;
+    justify-self: flex-end;
+}
+
+
+/*** ABOUT US ***/
+
+
+/*** SERVICES ***/
+
+.services {
+    background: url(../img/services.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services__title {
+    color: #ffffff;
+}
+
+.services__text {
+    color: #ffffff;
+}
+
+.services__wrapper {
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.services__wrapper::before {
+    background-color: #ffffff;
+}
+
+.services__wrapper::after {
+    background-color: #ffffff;
+}
+
+/*** WHAT WE DO ***/
+
+.what-we-do__icon {
+    height: 5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.what-we-do__item__title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    margin-bottom: 2rem;
+}
+
+.what-we-do__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+/*** GALLERY ***/
+
+.gallery {
+    display: grid;
+    grid-template-columns: 28.5% 41.5% 28.5%;
+    grid-gap: 10px;
+}
+
+.gallery__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.gallery__img {
+max-width: 100%;
+}
+
+/*** CONTACT US ***/
+
+.contact__button {
+    margin-top: 2rem;
+    width: 20rem;
+    height: 3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2.54px;
+    background-color: #3c3c3c;
+    border: none;
+}
+
+.contact__button:hover {
+    background-color: #696969;
+}
+
+/*** FOOTER ***/
+
+.container__footer {
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.footer__logo {
+    width: 2rem;
+    margin-right: 2rem;
+}
+
+.footer__copyright {
+    font-size: .9rem;
+}
